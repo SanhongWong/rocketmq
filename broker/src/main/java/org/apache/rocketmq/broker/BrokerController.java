@@ -860,9 +860,10 @@ public class BrokerController {
         }
 
 
-
+        // 路由注册
         this.registerBrokerAll(true, false, true);
 
+        // 发送心跳包
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
 
             @Override

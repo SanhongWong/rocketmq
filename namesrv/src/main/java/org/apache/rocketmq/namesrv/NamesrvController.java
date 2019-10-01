@@ -84,6 +84,7 @@ public class NamesrvController {
 
         this.registerProcessor();
 
+        // 心跳检测，每隔10s打印一次Broker
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
 
             @Override
